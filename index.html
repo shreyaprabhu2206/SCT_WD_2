@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono - Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="stopwatch-container">
+        <header>
+            <h1>TIMER</h1>
+            <p>Every second counts.</p>
+        </header>
+
+        <section class="stopwatch">
+            <div class="timer" id="timer">
+                <span id="minutes">00</span><span class="colon">:</span><span id="seconds">00</span><span class="decimal">.</span><span id="milliseconds">00</span>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="start-btn">Start</button>
+                <button id="lap-btn" class="lap-btn" disabled>Lap</button>
+                <button id="reset-btn" class="reset-btn" disabled>Reset</button>
+            </div>
+        </section>
+
+        <section class="laps-section">
+            <div class="laps-heading">
+                <h2>Lap Times</h2>
+                <span id="lap-count">0 Laps</span>
+            </div>
+
+<div class="lap-statistics">
+    <div class="stat-card fastest">
+        <span>Fastest Lap</span>
+        <h3 id="fastest-lap">--:--.--</h3>
+    </div>
+
+    <div class="stat-card slowest">
+        <span>Slowest Lap</span>
+        <h3 id="slowest-lap">--:--.--</h3>
+    </div>
+
+    <div class="stat-card average">
+        <span>Average Lap</span>
+        <h3 id="average-lap">--:--.--</h3>
+    </div>
+</div>
+
+            <div class="laps-header">
+                <span>Lap</span>
+                <span>Lap Time</span>
+                <span>Total Time</span>
+            </div>
+
+            <ul id="laps-list">
+                <li class="empty-message">Your lap times will appear here.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
